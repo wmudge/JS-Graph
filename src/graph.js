@@ -58,11 +58,9 @@ export class Graph {
   }
 
   /**
-   * Gets the list of nodes that have been added to the graph according to insertion order.
-   * Note insertion order due to node creation via the {@link Graph#addEdge} function.
+   * Gets the list of nodes that have been added to the graph according to topographical sort.
    */
   allNodes() {
-    /*
     const nodeSet = new Map();
 
     for (const u of this.edges.keys()) {
@@ -73,8 +71,6 @@ export class Graph {
     }
 
     return Array.from(nodeSet.keys());
-    */
-    return Array.from(this.edges.keys());
   }
 
   /**
