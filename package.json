@@ -8,7 +8,8 @@
   "jest": {
     "transform": {
       "^.+\\.jsx?$": "babel-jest"
-    }
+    },
+    "testEnvironment": "node"
   },
   "devDependencies": {
     "@babel/cli": "^7.4.3",
